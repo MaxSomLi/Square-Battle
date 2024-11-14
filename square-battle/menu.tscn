@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://3rldo7u24ic4"]
+
+[ext_resource type="Script" path="res://button_duo.gd" id="1_ewej0"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = -100.0
+offset_top = -40.0
+offset_right = 100.0
+offset_bottom = 40.0
+text = "PLAY"
+script = ExtResource("1_ewej0")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

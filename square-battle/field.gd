@@ -37,27 +37,30 @@ func _overlaps_enough(piece) -> bool:
 	var meshes = piece.get_children()
 	var sum = 0
 	for m in meshes:
-		var pr = (m.scale / 2)
-		var x = pr.x
-		var y = pr.y
-		if piece.rotation != 0 and abs(piece.rotation - PI) > ROTATION_DIFF:
-			x = pr.y
-			y = pr.x
-		var pos = piece.position + m.position.rotated(piece.rotation)*piece.scale
-		var x1m = pos.x - x
-		var x2m = pos.x + x
-		var y1m = pos.y - y
-		var y2m = pos.y + y
-		var a = x2m - x1m
-		var b = y2m - y1m
-		if x1 > x1m:
-			a -= x1 - x1m
-		if x2 < x2m:
-			a -= x2m - x2
-		if y1 > y1m:
-			b -= y1 - y1m
-		if y2 < y2m:
-			b -= y2m - y2
-		if a > 0 and b > 0:
-			sum += a*b
+		if m is MeshInstance2D:
+			var pr = (m.scale / 2)
+			var x = pr.x
+			var y = pr.y
+			if piece.rotation != 0 and abs(piece.rotation - PI) > ROTATION_DIFF:
+				x = pr.y
+				y = pr.x
+			var rot = m.position.rotated(piece.rotation)
+			rot.x *= piece.scale.x
+			var pos = piece.position + rot
+			var x1m = pos.x - x
+			var x2m = pos.x + x
+			var y1m = pos.y - y
+			var y2m = pos.y + y
+			var a = x2m - x1m
+			var b = y2m - y1m
+			if x1 > x1m:
+				a -= x1 - x1m
+			if x2 < x2m:
+				a -= x2m - x2
+			if y1 > y1m:
+				b -= y1 - y1m
+			if y2 < y2m:
+				b -= y2m - y2
+			if a > 0 and b > 0:
+				sum += a*b
 	return sum > BORD

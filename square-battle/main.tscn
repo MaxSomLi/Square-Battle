@@ -1,0 +1,659 @@
+[gd_scene load_steps=70 format=3 uid="uid://dsbr8021mabqi"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_qxj4v"]
+[ext_resource type="Texture2D" uid="uid://bv6duybka6toy" path="res://cyan.tres" id="2_md583"]
+[ext_resource type="Shape2D" uid="uid://c835a4j5kp4aw" path="res://collision.tres" id="3_4ni8h"]
+[ext_resource type="Script" path="res://type_1.gd" id="3_cpxfu"]
+[ext_resource type="Script" path="res://area_2d_of_1.gd" id="4_i1366"]
+[ext_resource type="Script" path="res://area_2d_of_2.gd" id="6_4kipu"]
+[ext_resource type="Script" path="res://type_m.gd" id="6_yti2c"]
+[ext_resource type="Script" path="res://area_2d_of_3.gd" id="7_joa7u"]
+[ext_resource type="Script" path="res://area_2d_of_4.gd" id="9_anfw2"]
+[ext_resource type="Script" path="res://button.gd" id="11_jalaw"]
+[ext_resource type="Script" path="res://area_2d_of_5.gd" id="24_5e17f"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_7fs13"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_q8jd4"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_c2kdk"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_frsxb"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_qsvxt"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_wfci1"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_pe41t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1ajl"]
+size = Vector2(137, 147)
+
+[sub_resource type="QuadMesh" id="QuadMesh_rmqt5"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_khgx8"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_ht548"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0bd00"]
+size = Vector2(2.11766, 1.93052)
+
+[sub_resource type="QuadMesh" id="QuadMesh_63ovs"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_kmgx0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yny2g"]
+size = Vector2(2.93658, 3.27721)
+
+[sub_resource type="QuadMesh" id="QuadMesh_njo3m"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_aiyyn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w32es"]
+size = Vector2(3.28958, 2.76448)
+
+[sub_resource type="QuadMesh" id="QuadMesh_bop8k"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_yukbh"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_ubf1k"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_hfwif"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m11vf"]
+size = Vector2(4.57648, 2.51005)
+
+[sub_resource type="QuadMesh" id="QuadMesh_4jhmf"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_4qwe3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d1vo"]
+size = Vector2(1.42778, 2.26667)
+
+[sub_resource type="QuadMesh" id="QuadMesh_45ngk"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_31i40"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cnvpx"]
+size = Vector2(1.15556, 2.21667)
+
+[sub_resource type="QuadMesh" id="QuadMesh_n4aqa"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_b5dyt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4ymg"]
+size = Vector2(1.63925, 3.39715)
+
+[sub_resource type="QuadMesh" id="QuadMesh_3q2sc"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_phsyw"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_i0jgh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6a5md"]
+size = Vector2(1.2, 3.51667)
+
+[sub_resource type="QuadMesh" id="QuadMesh_tj6s4"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_2ttm2"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_1k6rm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2rou"]
+size = Vector2(3.4, 3.45)
+
+[sub_resource type="QuadMesh" id="QuadMesh_8hht7"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_3xrpu"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_4t7pq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_50tek"]
+size = Vector2(1.59167, 3.2)
+
+[sub_resource type="QuadMesh" id="QuadMesh_28oh6"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_xx3c8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkkck"]
+size = Vector2(1.90833, 3.3)
+
+[sub_resource type="QuadMesh" id="QuadMesh_dkh1g"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_pgnw2"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_eyea8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07tnm"]
+size = Vector2(3.5, 3.38333)
+
+[sub_resource type="QuadMesh" id="QuadMesh_flwmd"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_wlqyt"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_tc6sk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_etqm5"]
+size = Vector2(3.18333, 3.26667)
+
+[sub_resource type="QuadMesh" id="QuadMesh_rb0ix"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_5tabg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tv2xq"]
+size = Vector2(2.35, 4.28333)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_qxj4v")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Field" type="MeshInstance2D" parent="."]
+z_index = -2
+scale = Vector2(840, 840)
+mesh = SubResource("QuadMesh_7fs13")
+texture = SubResource("ImageTexture_q8jd4")
+
+[node name="Type1" type="MeshInstance2D" parent="."]
+position = Vector2(820, -433)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_c2kdk")
+texture = ExtResource("2_md583")
+script = ExtResource("3_cpxfu")
+
+[node name="Area2D" type="Area2D" parent="Type1"]
+script = ExtResource("4_i1366")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type1/Area2D"]
+shape = ExtResource("3_4ni8h")
+
+[node name="Type2" type="MeshInstance2D" parent="."]
+position = Vector2(718, -278)
+scale = Vector2(120, 60)
+mesh = SubResource("QuadMesh_frsxb")
+texture = ExtResource("2_md583")
+script = ExtResource("3_cpxfu")
+
+[node name="Area2D" type="Area2D" parent="Type2"]
+script = ExtResource("6_4kipu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type2/Area2D"]
+shape = ExtResource("3_4ni8h")
+
+[node name="Type3" type="MeshInstance2D" parent="."]
+position = Vector2(800, 0)
+scale = Vector2(60, 180)
+mesh = SubResource("QuadMesh_qsvxt")
+texture = ExtResource("2_md583")
+script = ExtResource("3_cpxfu")
+
+[node name="Area2D" type="Area2D" parent="Type3"]
+script = ExtResource("7_joa7u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type3/Area2D"]
+shape = ExtResource("3_4ni8h")
+
+[node name="Type4" type="Node2D" parent="."]
+position = Vector2(709, 221)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type4"]
+position = Vector2(-30, -30)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_wfci1")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type4"]
+position = Vector2(0, 30)
+scale = Vector2(120, 60)
+mesh = SubResource("QuadMesh_pe41t")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type4"]
+script = ExtResource("7_joa7u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type4/Area2D"]
+position = Vector2(-2.5, -7.5)
+shape = SubResource("RectangleShape2D_v1ajl")
+
+[node name="Type5" type="MeshInstance2D" parent="."]
+position = Vector2(0, -530)
+scale = Vector2(120, 120)
+mesh = SubResource("QuadMesh_rmqt5")
+texture = ExtResource("2_md583")
+script = ExtResource("3_cpxfu")
+
+[node name="Area2D" type="Area2D" parent="Type5"]
+script = ExtResource("9_anfw2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type5/Area2D"]
+position = Vector2(0, 0.025)
+shape = ExtResource("3_4ni8h")
+
+[node name="Type6" type="Node2D" parent="."]
+position = Vector2(574, -100)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type6"]
+position = Vector2(-30, -30)
+scale = Vector2(60, 120)
+mesh = SubResource("QuadMesh_khgx8")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type6"]
+position = Vector2(30, 30)
+scale = Vector2(60, 120)
+mesh = SubResource("QuadMesh_ht548")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type6"]
+position = Vector2(-30, -30)
+scale = Vector2(60, 120)
+script = ExtResource("9_anfw2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type6/Area2D"]
+position = Vector2(0.442079, 0.2385)
+rotation = 0.00187332
+shape = SubResource("RectangleShape2D_0bd00")
+
+[node name="Type7" type="Node2D" parent="."]
+position = Vector2(0, 530)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type7"]
+position = Vector2(0, 30)
+scale = Vector2(180, 60)
+mesh = SubResource("QuadMesh_63ovs")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type7"]
+position = Vector2(0, -30)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_kmgx0")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type7"]
+position = Vector2(0, -30)
+scale = Vector2(60, 60)
+script = ExtResource("9_anfw2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type7/Area2D"]
+position = Vector2(0.0250003, 0.299999)
+rotation = 1.58002
+shape = SubResource("RectangleShape2D_yny2g")
+
+[node name="Type8" type="Node2D" parent="."]
+position = Vector2(543, 423)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type8"]
+position = Vector2(0, 30)
+scale = Vector2(180, 60)
+mesh = SubResource("QuadMesh_njo3m")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type8"]
+position = Vector2(60, -30)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_aiyyn")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type8"]
+position = Vector2(60, -30)
+scale = Vector2(60, 60)
+script = ExtResource("9_anfw2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type8/Area2D"]
+position = Vector2(-1.02544, 0.467114)
+rotation = 0.0158011
+shape = SubResource("RectangleShape2D_w32es")
+
+[node name="Type9" type="MeshInstance2D" parent="."]
+position = Vector2(-530, 200)
+scale = Vector2(60, 240)
+mesh = SubResource("QuadMesh_bop8k")
+texture = ExtResource("2_md583")
+script = ExtResource("3_cpxfu")
+
+[node name="Area2D" type="Area2D" parent="Type9"]
+script = ExtResource("9_anfw2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type9/Area2D"]
+shape = ExtResource("3_4ni8h")
+
+[node name="Type10" type="MeshInstance2D" parent="."]
+position = Vector2(-300, 520)
+scale = Vector2(300, 60)
+mesh = SubResource("QuadMesh_yukbh")
+texture = ExtResource("2_md583")
+script = ExtResource("3_cpxfu")
+
+[node name="Area2D" type="Area2D" parent="Type10"]
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type10/Area2D"]
+shape = ExtResource("3_4ni8h")
+
+[node name="Type11" type="Node2D" parent="."]
+position = Vector2(500, -500)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type11"]
+position = Vector2(0, 30)
+scale = Vector2(240, 60)
+mesh = SubResource("QuadMesh_ubf1k")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type11"]
+position = Vector2(90, -30)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_hfwif")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type11"]
+position = Vector2(90, -30)
+scale = Vector2(60, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type11/Area2D"]
+position = Vector2(-1.3, 0.500001)
+rotation = 0.00945412
+shape = SubResource("RectangleShape2D_m11vf")
+
+[node name="Type12" type="Node2D" parent="."]
+position = Vector2(-600, 400)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type12"]
+position = Vector2(-60, -30)
+scale = Vector2(120, 60)
+mesh = SubResource("QuadMesh_4jhmf")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type12"]
+position = Vector2(30, 30)
+scale = Vector2(180, 60)
+mesh = SubResource("QuadMesh_4qwe3")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type12"]
+position = Vector2(30, 30)
+scale = Vector2(180, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type12/Area2D"]
+position = Vector2(-0.175, -0.35)
+shape = SubResource("RectangleShape2D_3d1vo")
+
+[node name="Type13" type="Node2D" parent="."]
+position = Vector2(-200, -520)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type13"]
+position = Vector2(0, 30)
+scale = Vector2(180, 60)
+mesh = SubResource("QuadMesh_45ngk")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type13"]
+position = Vector2(30, -30)
+scale = Vector2(120, 60)
+mesh = SubResource("QuadMesh_31i40")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type13"]
+position = Vector2(0, 30)
+scale = Vector2(180, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type13/Area2D"]
+position = Vector2(0.0444446, -0.491667)
+shape = SubResource("RectangleShape2D_cnvpx")
+
+[node name="Type14" type="Node2D" parent="."]
+position = Vector2(-800, 0)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type14"]
+position = Vector2(30, 30)
+scale = Vector2(60, 180)
+mesh = SubResource("QuadMesh_n4aqa")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type14"]
+position = Vector2(-60, -30)
+scale = Vector2(120, 60)
+mesh = SubResource("QuadMesh_b5dyt")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type14"]
+position = Vector2(-60, -30)
+scale = Vector2(120, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type14/Area2D"]
+position = Vector2(0.258333, 1.03333)
+rotation = -0.00174201
+shape = SubResource("RectangleShape2D_g4ymg")
+
+[node name="Type15" type="Node2D" parent="."]
+position = Vector2(-850, 300)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type15"]
+position = Vector2(-30, 0)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_3q2sc")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type15"]
+position = Vector2(0, 60)
+scale = Vector2(120, 60)
+mesh = SubResource("QuadMesh_phsyw")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Type15"]
+position = Vector2(0, -60)
+scale = Vector2(120, 60)
+mesh = SubResource("QuadMesh_i0jgh")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type15"]
+position = Vector2(0, -60)
+scale = Vector2(120, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type15/Area2D"]
+position = Vector2(0.00833321, 0.991667)
+shape = SubResource("RectangleShape2D_6a5md")
+
+[node name="Type16" type="Node2D" parent="."]
+position = Vector2(-800, -200)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type16"]
+scale = Vector2(60, 180)
+mesh = SubResource("QuadMesh_tj6s4")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type16"]
+position = Vector2(60, 60)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_2ttm2")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Type16"]
+position = Vector2(-60, -60)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_1k6rm")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type16"]
+position = Vector2(-60, -60)
+scale = Vector2(60, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type16/Area2D"]
+position = Vector2(0.983332, 0.924999)
+shape = SubResource("RectangleShape2D_t2rou")
+
+[node name="Type17" type="Node2D" parent="."]
+position = Vector2(-547, -307)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type17"]
+position = Vector2(30, 30)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_8hht7")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type17"]
+position = Vector2(-30, 60)
+scale = Vector2(60, 120)
+mesh = SubResource("QuadMesh_3xrpu")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Type17"]
+position = Vector2(60, -30)
+scale = Vector2(120, 60)
+mesh = SubResource("QuadMesh_4t7pq")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type17"]
+position = Vector2(60, -30)
+scale = Vector2(120, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type17/Area2D"]
+position = Vector2(-0.262501, 1.06667)
+shape = SubResource("RectangleShape2D_50tek")
+
+[node name="Type18" type="Node2D" parent="."]
+position = Vector2(278, 520)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type18"]
+position = Vector2(30, 0)
+scale = Vector2(60, 180)
+mesh = SubResource("QuadMesh_28oh6")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type18"]
+position = Vector2(-60, 0)
+scale = Vector2(120, 60)
+mesh = SubResource("QuadMesh_xx3c8")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type18"]
+position = Vector2(-60, 0)
+scale = Vector2(120, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type18/Area2D"]
+position = Vector2(0.3625, 0.0333338)
+shape = SubResource("RectangleShape2D_vkkck")
+
+[node name="Type19" type="Node2D" parent="."]
+position = Vector2(800, 400)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type19"]
+scale = Vector2(60, 180)
+mesh = SubResource("QuadMesh_dkh1g")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type19"]
+position = Vector2(60, 0)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_pgnw2")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Type19"]
+position = Vector2(-60, 60)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_eyea8")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type19"]
+position = Vector2(60, 0)
+scale = Vector2(60, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type19/Area2D"]
+position = Vector2(-0.95, 0.225)
+shape = SubResource("RectangleShape2D_07tnm")
+
+[node name="Type20" type="Node2D" parent="."]
+position = Vector2(-500, -480)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type20"]
+scale = Vector2(60, 180)
+mesh = SubResource("QuadMesh_flwmd")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type20"]
+position = Vector2(60, 0)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_wlqyt")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Type20"]
+position = Vector2(-60, 0)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_tc6sk")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type20"]
+position = Vector2(-60, 0)
+scale = Vector2(60, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type20/Area2D"]
+position = Vector2(1.00833, -1.90735e-06)
+shape = SubResource("RectangleShape2D_etqm5")
+
+[node name="Type21" type="Node2D" parent="."]
+position = Vector2(540, 170)
+script = ExtResource("6_yti2c")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Type21"]
+position = Vector2(-30, 0)
+scale = Vector2(60, 240)
+mesh = SubResource("QuadMesh_rb0ix")
+texture = ExtResource("2_md583")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Type21"]
+position = Vector2(30, 30)
+scale = Vector2(60, 60)
+mesh = SubResource("QuadMesh_5tabg")
+texture = ExtResource("2_md583")
+
+[node name="Area2D" type="Area2D" parent="Type21"]
+position = Vector2(30, 30)
+scale = Vector2(60, 60)
+script = ExtResource("24_5e17f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Type21/Area2D"]
+position = Vector2(-0.491668, -0.491667)
+shape = SubResource("RectangleShape2D_tv2xq")
+
+[node name="Label" type="Label" parent="."]
+z_index = 2
+offset_left = -834.0
+offset_top = -529.0
+offset_right = -728.0
+offset_bottom = -480.0
+scale = Vector2(2, 2)
+text = "YOU: 0
+OPPONENT: 0"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 433.0
+offset_top = 543.0
+offset_right = 636.0
+offset_bottom = 605.0
+text = "PASS"
+script = ExtResource("11_jalaw")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
